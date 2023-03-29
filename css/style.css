@@ -1,0 +1,295 @@
+.header {
+}
+.container {
+}
+.header-up {
+}
+.header-leftside {
+}
+.header-leftside-logo {
+}
+.header-leftside-logo-img {
+}
+.header-leftside-link {
+}
+.header-rightside {
+}
+.header-rightside-link {
+}
+.header-down {
+}
+.header-navigation {
+}
+.header-navigation-list {
+}
+.header-navigation-item {
+}
+.header-navigation-item-link {
+}
+.header-button-container {
+}
+.header-down-btn {
+}
+.main {
+}
+.offers {
+}
+.offers-title {
+}
+.offers-container {
+}
+.offers-block {
+}
+.offers-leftside-tour {
+}
+.tour-tiitle {
+}
+.tour-price {
+}
+.tour-link {
+}
+.offers-rooms {
+}
+.rooms-title {
+}
+.rooms-price {
+}
+.rooms-link {
+}
+.about {
+}
+.about-title {
+}
+.about-description {
+}
+.services {
+}
+.services-title {
+}
+.services-list {
+}
+.services-item {
+}
+.services-item-img {
+}
+.services-item-link {
+}
+.services-item-description {
+}
+.advantages {
+}
+.advantages-title {
+}
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-item-icon {
+}
+.advantages-item-description {
+}
+.hotels {
+}
+.hotels-title {
+}
+.hotels-list {
+}
+.hotels-item {
+}
+.hotels-item-img {
+}
+.hotels-item-price {
+}
+.price-from {
+}
+.price-count {
+}
+.price-night {
+}
+.hotels-item-stars {
+}
+.star {
+}
+.hotels-item-name {
+}
+.hotels-item-location {
+}
+.btn {
+}
+.hotels-more {
+}
+.hotels-more-link {
+}
+
+.container {
+  margin: 30px auto;
+  width: 1170px;  
+}
+
+a {
+  line-height: 0;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  margin: 0 0 20px 40px  ;
+}
+
+section:not(:last-child) {
+  margin-bottom: 70px;
+}
+
+/* Header */
+
+/* UP side */
+.header-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-leftside {
+  display: flex;
+  align-items: center;
+}
+
+.header-leftside-logo-img {
+  margin-right: 40px;
+}
+
+/* DOWN side */
+
+.header-down {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 70px;
+}
+
+.header-navigation {
+  margin-right: auto;
+}
+
+.header-navigation-list {
+  display: flex;
+}
+
+.header-navigation-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-down-btn:first-child {
+  margin-right: 40px;
+}
+
+
+/* MAIN */
+/* Offers */
+
+.offers-container {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.offers-block {
+  margin-right: 389px;
+}
+
+.offers-block:nth-child(2) {
+  order: 2;
+}
+
+/* About */
+
+.about-description {
+  padding: 0;
+  margin: 0;
+}
+
+/* Services */
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.services-item {
+  max-width: 573px;
+}
+
+.services-item:nth-child(-n+2) {
+  margin-bottom: 24px;
+}
+
+.services-item-link {
+  display: block;
+  line-height: 1;
+}
+
+.services-item-description {
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+
+/* Advantages */
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  max-width: 276px;
+}
+
+.advantages-item:nth-child(-n+4) {
+  margin-bottom: 22px;
+}
+
+.advantages-item-description {
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+/* Hotels */
+
+.hotels-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotels-item {
+  max-width: 374px;
+  /* margin-bottom: 24px; */
+}
+
+.hotels-item:nth-last-child(n + 4) {
+  margin-bottom: 24px;
+}
+
+.hotels-item:last-child {
+  min-width: 374px;
+}
+
+.hotels-item-price, .hotels-item-stars {
+  display: inline-block;
+}
+
+.hotels-item-price {
+  margin-right: 53px;
+}
