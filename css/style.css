@@ -121,6 +121,41 @@
 .hotels-more-link {
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: 'Muller';
+  src:  url('../font/MullerMedium.woff2') format('woff2'),
+        url('../font/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src:  url('../font/MullerRegular.woff2') format('woff2'),
+        url('../font/MullerRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src:  url('../font/MullerBold.woff2') format('woff2'),
+        url('../font/MullerBold.woff') format('woff');   
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Muller', sans-serif;
+  background-color: #F1F1F1;
+}
+
 .container {
   margin: 30px auto;
   width: 1170px;  
@@ -160,8 +195,34 @@ section:not(:last-child) {
   align-items: center;
 }
 
+.header-leftside-link {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  color: #666666;
+}
+
 .header-leftside-logo-img {
   margin-right: 40px;
+}
+
+.header-rightside-link {
+  position: flex;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: normal;
+  color: #CC9933;
+}
+
+.header-rightside-link::before {
+  content: '';
+  background-image: url(../img/keyboard_tab.svg);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+
 }
 
 /* DOWN side */
