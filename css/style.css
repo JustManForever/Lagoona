@@ -28,7 +28,7 @@
 }
 .header-button-container {
 }
-.header-down-btn {
+.header-btn-huge {
 }
 .main {
 }
@@ -40,7 +40,7 @@
 }
 .offers-block {
 }
-.offers-leftside-tour {
+.first-tour {
 }
 .tour-tiitle {
 }
@@ -48,7 +48,9 @@
 }
 .tour-link {
 }
-.offers-rooms {
+.second-tour {
+}
+.luxe-rooms {
 }
 .rooms-title {
 }
@@ -71,6 +73,8 @@
 .services-item {
 }
 .services-item-img {
+}
+.sevice-item-info {
 }
 .services-item-link {
 }
@@ -98,6 +102,8 @@
 }
 .hotels-item-img {
 }
+.hotels-item-info {
+}
 .hotels-item-price {
 }
 .price-from {
@@ -114,11 +120,21 @@
 }
 .hotels-item-location {
 }
-.btn {
+.hotels-btn {
 }
 .hotels-more {
 }
 .hotels-more-link {
+}
+.search {
+}
+.search-title {
+}
+.search-form {
+}
+.search-form-title {
+}
+.search-form-choose {
 }
 
 /* Fonts */
@@ -640,6 +656,37 @@ section:not(:last-child) {
   border-left: none;
   border-top: none;
   transform: rotate(-45deg); 
+}
+
+/* Search */
+.search {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  max-height: 256px;
+  background-color: #E9E9E9;
+  border-radius: 15px;
+}
+
+.search-title {
+  line-height: 1;
+  color: #000;
+}
+
+.search-form {
+  margin: 0 45px;
+  padding: 32px 28px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.search-form-choose {
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-image: url(../img/FormArrowDown.svg);
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
 }
 
 input[type=number]::-webkit-inner-spin-button,

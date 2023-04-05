@@ -430,24 +430,24 @@
       </section>
       <section class="search">
         <h2 class="search-title">Хочу тур</h2>
-        <form action="https://postman-echo.com/post" method="post">
-          <label for="city">Город вылета</label>
-          <select name="city" id="city">
+        <form class="search-form" action="https://postman-echo.com/post" method="post">
+          <label class="search-form-title" for="city">Город вылета</label>
+          <select class="search-form-choose" name="city" id="city">
             <option value="Санкт-Петербург">Санкт-Петербург</option>
             <option value="Санкт-Петербург">Санкт-Петербург</option>
             <option value="Санкт-Петербург">Санкт-Петербург</option>
           </select>
-          <label for="country">Страна вылета</label>
-          <select name="country" id="country">
+          <label class="search-form-title" for="country">Страна вылета</label>
+          <select class="search-form-choose" name="country" id="country">
             <option value="Санкт-Петербург">Австралия</option>
             <option value="Санкт-Петербург">Австралия</option>
             <option value="Санкт-Петербург">Австралия</option>
           </select>
-          <label for="date">Дата прибытия</label>
+          <label class="search-form-title" for="date">Дата прибытия</label>
           <input type="date" name="date" value="2021-10-18" id="date">
-          <label for="nights">Ночей</label>
+          <label class="search-form-title" for="nights">Ночей</label>
           <input type="number" min="1" id="nights" name="nights" value="6">
-          <label for="guests">Туристы</label>
+          <label class="search-form-title" for="guests">Туристы</label>
           <input type="number" min="1" id="guests" name="guests" value="2">
           <button type="submit">Найти</button>
         </form>
