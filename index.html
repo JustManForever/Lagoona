@@ -428,31 +428,117 @@
           </li>
         </ul>
       </section>
+
       <section class="search">
         <h2 class="search-title">Хочу тур</h2>
         <form class="search-form" action="https://postman-echo.com/post" method="post">
-          <label class="search-form-title" for="city">Город вылета</label>
-          <select class="search-form-choose" name="city" id="city">
-            <option value="Санкт-Петербург">Санкт-Петербург</option>
-            <option value="Санкт-Петербург">Санкт-Петербург</option>
-            <option value="Санкт-Петербург">Санкт-Петербург</option>
-          </select>
-          <label class="search-form-title" for="country">Страна вылета</label>
-          <select class="search-form-choose" name="country" id="country">
-            <option value="Санкт-Петербург">Австралия</option>
-            <option value="Санкт-Петербург">Австралия</option>
-            <option value="Санкт-Петербург">Австралия</option>
-          </select>
-          <label class="search-form-title" for="date">Дата прибытия</label>
-          <input type="date" name="date" value="2021-10-18" id="date">
-          <label class="search-form-title" for="nights">Ночей</label>
-          <input type="number" min="1" id="nights" name="nights" value="6">
-          <label class="search-form-title" for="guests">Туристы</label>
-          <input type="number" min="1" id="guests" name="guests" value="2">
+          <div class="form-container">
+            <label class="search-form-title" for="city">Город вылета</label>
+            <select class="search-form-choose form-font" name="city" id="city">
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+            </select>
+          </div>
+          <div class="form-container">
+            <label class="search-form-title" for="country">Страна вылета</label>
+            <select class="search-form-choose form-font" name="country" id="country">
+              <option value="Санкт-Петербург">Австралия</option>
+              <option value="Санкт-Петербург">Австралия</option>
+              <option value="Санкт-Петербург">Австралия</option>
+            </select>
+          </div>
+          <div class="form-container">
+            <label class="search-form-title" for="date">Дата прибытия</label>
+            <input class="form-date form-font" type="date" name="date" value="2021-10-18" id="date">
+          </div>
+          <div class="form-container">
+            <label class="search-form-title" for="nights">Ночей</label>
+            <input class="form-number form-font" type="number" min="1" id="nights" name="nights" value="6">
+          </div>
+          <div class="form-container">
+            <label class="search-form-title" for="guests">Туристы</label>
+            <input class="form-number form-font" type="number" min="1" id="guests" name="guests" value="2" required>
+          </div>
           <button type="submit">Найти</button>
         </form>
       </section>
+
+      <section class="contacts">
+        <h2 class="contacts-title">Контакты</h2>
+        <div class="contacts-container">
+          <div class="contacts-container-infoblock">
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <h4 class="contacts-item-title">Адрес</h4>
+                <p class="contacts-item-description">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+              </li>
+              <li class="contacts-item">
+                <h4 class="contacts-item-title">Телефоны</h4>
+                <div class="contacts-item-info">
+                  <a class="contacts-item-link" href="tel:+74995356434">+7 499 535-64-34</a>
+                  <a class="contacts-item-link" href="tel:+74950050544">+7 495 005-05-44</a>
+                </div>
+              </li>
+              <li class="contacts-item">
+                <h4 class="contacts-item-title">Email</h4>
+                <div class="contacts-item-info">
+                  <a class="contacts-item-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                  <span class="contacts-item-subinfo">по вопросам бронирования</span>
+                  <a class="contacts-item-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                  <span class="contacts-item-subinfo">по вопросам сотрудничества</span>
+                </div>
+              </li>
+              <li class="contacts-item">
+                <h4 class="contacts-item-title">График</h4>
+                <p class="contacts-item-description">Понедельник-пятница, с 10:00 до 19:00</p>
+              </li>
+            </ul>
+            <button class="contacts-btn">Построить маршрут</button>
+          </div>
+          <img src="../Lagoona/img/ContactsImage.png" alt="Lagoona reception">
+        </div>  
+      </section>
+
     </div>
   </main>
+  <footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-left-side">
+          <p class="copyright">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
+          <p class="site-law">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+          <a class="users-agree" href="#">Пользовательское соглашение</a>
+        </div>
+        <div class="footer-middle-side">
+          <p class="footer-adress">11710, улица Юности, дом 5 строение 4, офис 2</p>
+          <div class="footer-container-phone">
+            <a class="footer-link" href="tel:+74995356434">+7 499 535-64-34</a>
+            <a class="footer-link" href="tel:+74950050544">+7 495 005-05-44</a>
+          </div>
+          <div class="footer-container-adress">
+            <a class="footer-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+            <a class="footer-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+          </div>
+        </div>
+        <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <span class="footer-social-icon owl"></span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <span class="footer-social-icon ok"></span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link">
+                <span class="footer-social-icon vk"></span>
+              </a>
+            </li>
+        </ul>
+        <span class="footer-logo"></span>
+    </div>
+  </footer>
 </body>
 </html>
