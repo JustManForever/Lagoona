@@ -268,6 +268,13 @@ button {
   font-weight: normal;
   background-color: #FFFFFF;
   color: #CC9933;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+button:hover {
+  background-color: #CC9933;
+  color: #fff;
 }
 
 section:not(:last-child) {
@@ -289,11 +296,24 @@ section:not(:last-child) {
   align-items: center;
 }
 
+.header-leftside-logo {
+  transition: transform 0.5s cubic-bezier(.85,.18,.65,.82) .1s;
+}
+
+.header-leftside-logo:hover {
+  transform: translateY(5px);
+}
+
 .header-leftside-link {
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
   color: #666666;
+  transition: color .3s ease-in;
+}
+
+.header-leftside-link:hover {
+  color: #CC9933
 }
 
 .header-leftside-logo-img {
@@ -306,18 +326,30 @@ section:not(:last-child) {
   line-height: 1;
   font-weight: normal;
   color: #CC9933;
+  transition: color .4s ease-in-out;
+}
+
+.header-rightside-link:hover {
+  color: #F0BF5F;
 }
 
 .header-rightside-link::before {
   content: '';
   background-image: url(../img/keyboard_tab.svg);
+  background-repeat: no-repeat;
   position: absolute;
-  width: 24px;
+  width: 100%;
   height: 24px;
   left: -27px;
   top: -5px;
-
+  transition: all .4s ease-in-out;
 }
+
+.header-rightside-link:hover::before {
+  background-image: url(../img/keyboard_tab_2.svg);
+  left: -35px;
+}
+
 
 /* DOWN side */
 
@@ -344,11 +376,24 @@ section:not(:last-child) {
   margin-right: 40px;
 }
 
+.header-navigation-item {
+  transition: transform .4s ease-in-out;
+}
+
+.header-navigation-item:hover {
+  transform: translateY(5px);
+}
+
 .header-navigation-item-link {
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
   color: #666666;
+  transition: color .4s ease-in-out,
+}
+
+.header-navigation-item-link:hover {
+  color: #CC9933;
 }
 
 .header-button-container {
@@ -449,6 +494,11 @@ section:not(:last-child) {
   border-left: none;
   border-top: none;
   transform: rotate(-45deg); 
+  transition: left .4s ease-in-out;
+}
+
+.tour-link:hover::before {
+  left: 98px;
 }
 
 .rooms-title {
@@ -487,7 +537,12 @@ section:not(:last-child) {
   border: 2px solid #F0BF5F;
   border-left: none;
   border-top: none;
-  transform: rotate(-45deg); 
+  transform: rotate(-45deg);
+  transition: left .4s ease-in-out; 
+}
+
+.rooms-link:hover::before {
+  left: 98px;
 }
 
 
@@ -574,22 +629,26 @@ section:not(:last-child) {
 
 /* Advantages */
 
+section.advantages {
+  margin-bottom: 58px;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .advantages-item {
   max-width: 276px;
+  margin-bottom: 22px;
   padding: 40px 42px 32px 45px;
   border-radius: 15px;
   line-height: 0;
   background-color: #FFFFFF;
 }
 
-.advantages-item:nth-child(-n+4) {
-  margin-bottom: 22px;
+.advantages-item:not(:nth-child(4n)){
+  margin-right: 22px;
 }
 
 .advantages-item-description {
