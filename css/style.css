@@ -229,6 +229,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --font-color: #000;
+  --link-color: #CC9933;
+  --hover-color: #F0BF5F;
+  --title-description-color: #FFF;
+}
+
 html {
   font-family: 'Muller', sans-serif;
   background-color: #F1F1F1;
@@ -261,20 +268,20 @@ button {
   width: 107px;
   height: 42px;
   padding: 12px 19px;
-  border: 1px solid #CC9933;
+  border: 1px solid var(--link-color);
   border-radius: 10px;
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
-  background-color: #FFFFFF;
-  color: #CC9933;
+  background-color: var(--title-description-color);
+  color: var(--link-color);
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
 
 button:hover {
-  background-color: #CC9933;
-  color: #fff;
+  background-color: var(--link-color);
+  color: var(--title-description-color);
 }
 
 section:not(:last-child) {
@@ -313,7 +320,7 @@ section:not(:last-child) {
 }
 
 .header-leftside-link:hover {
-  color: #CC9933
+  color: var(--link-color);
 }
 
 .header-leftside-logo-img {
@@ -325,12 +332,12 @@ section:not(:last-child) {
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
-  color: #CC9933;
+  color: var(--link-color);
   transition: color .4s ease-in-out;
 }
 
 .header-rightside-link:hover {
-  color: #F0BF5F;
+  color: var(--hover-color);
 }
 
 .header-rightside-link::before {
@@ -360,7 +367,7 @@ section:not(:last-child) {
   align-items: center;
   padding: 0 45px;
   margin-bottom: 70px;
-  background-color: #FFFFFF;
+  background-color: var(--title-description-color);
   border-radius: 15px;
 }
 
@@ -393,7 +400,7 @@ section:not(:last-child) {
 }
 
 .header-navigation-item-link:hover {
-  color: #CC9933;
+  color: var(--link-color);
 }
 
 .header-button-container {
@@ -460,7 +467,7 @@ section:not(:last-child) {
   font-size: 40px;
   line-height: 1;
   font-weight: bold;
-  color: #FFFFFF;
+  color: var(--title-description-color);
 }
 
 .first-tour .tour-tiitle {
@@ -472,7 +479,7 @@ section:not(:last-child) {
   font-size: 20px;
   line-height: 1;
   font-weight: normal;
-  color: #FFFFFF;
+  color: var(--title-description-color);
 }
 
 .tour-link {
@@ -480,7 +487,7 @@ section:not(:last-child) {
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
-  color: #F0BF5F;
+  color: var(--hover-color);
 }
 
 .tour-link::before {
@@ -490,7 +497,7 @@ section:not(:last-child) {
   top: 1px;
   width: 10px;
   height: 10px;
-  border: 2px solid #F0BF5F;
+  border: 2px solid var(--hover-color);
   border-left: none;
   border-top: none;
   transform: rotate(-45deg); 
@@ -508,7 +515,7 @@ section:not(:last-child) {
   font-size: 60px;
   line-height: 1;
   font-weight: bold;
-  color: #FFFFFF;
+  color: var(--title-description-color);
 }
 
 .rooms-price {
@@ -516,7 +523,7 @@ section:not(:last-child) {
   font-size: 30px;
   line-height: 1;
   font-weight: normal;
-  color: #FFFFFF;
+  color: var(--title-description-color);
 }
 
 .rooms-link {
@@ -524,7 +531,7 @@ section:not(:last-child) {
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
-  color: #F0BF5F;
+  color: var(--hover-color);
 }
 
 .rooms-link::before {
@@ -534,7 +541,7 @@ section:not(:last-child) {
   top: 1px;
   width: 10px;
   height: 10px;
-  border: 2px solid #F0BF5F;
+  border: 2px solid var(--hover-color);
   border-left: none;
   border-top: none;
   transform: rotate(-45deg);
@@ -543,11 +550,6 @@ section:not(:last-child) {
 
 .rooms-link:hover::before {
   left: 98px;
-}
-
-
-.offers-block:nth-child(2) {
-  /* order: 2; */
 }
 
 /* About */
@@ -559,7 +561,7 @@ section:not(:last-child) {
   font-size: 16px;
   line-height: 2;
   font-weight: normal;
-  color: #000;
+  color: var(--font-color);
 }
 
 /* Services */
@@ -573,7 +575,7 @@ section:not(:last-child) {
 
 .services-item {
   max-width: 573px;
-  background-color: #FFFFFF;
+  background-color: var(--title-description-color);
   border-radius: 15px;
 }
 
@@ -596,7 +598,12 @@ section:not(:last-child) {
   font-size: 20px;
   line-height: 2;
   font-weight: 500;
-  color: #CC9933;
+  color: var(--link-color);
+  transition: color .4s ease-in-out;
+}
+
+.services-item-link:hover {
+  color: var(--hover-color)
 }
 
 .services-item-link::after {
@@ -606,10 +613,16 @@ section:not(:last-child) {
   top: 13px;
   width: 10px;
   height: 10px;
-  border: 2px solid #F0BF5F;
+  border: 2px solid var(--link-color);
   border-left: none;
   border-top: none;
   transform: rotate(-45deg); 
+  transition: all .4s ease-in-out;
+}
+
+.services-item-link:hover::after {
+  border-color: var(--hover-color);
+  right: -27px;
 }
 
 .services-item-description {
@@ -618,7 +631,7 @@ section:not(:last-child) {
   font-size: 16px;
   line-height: 2;
   font-weight: normal;
-  color: #000;
+  color: var(--font-color);
   word-wrap: break-word;
 }
 
@@ -644,7 +657,7 @@ section.advantages {
   padding: 40px 42px 32px 45px;
   border-radius: 15px;
   line-height: 0;
-  background-color: #FFFFFF;
+  background-color: var(--title-description-color);
 }
 
 .advantages-item:not(:nth-child(4n)){
@@ -657,7 +670,7 @@ section.advantages {
   font-size: 16px;
   line-height: 2;
   font-weight: normal;
-  color: #000;
+  color: var(--font-color);
 }
 
 /* Hotels */
@@ -675,7 +688,7 @@ section.advantages {
   max-width: 374px;
   border-radius: 15px;
   line-height: 0;
-  background-color: #FFFFFF;
+  background-color: var(--title-description-color);
   /* margin-bottom: 24px; */
 }
 
@@ -708,14 +721,14 @@ section.advantages {
   font-size: 20px;
   line-height: 1;
   font-weight: bold;
-  color: #000;
+  color: var(--font-color);
 }
 
 .price-night {
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
-  color: #000;
+  color: var(--font-color);
 }
 
 .hotels-item-price, .hotels-item-stars {
@@ -737,7 +750,7 @@ section.advantages {
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
-  color: #000;
+  color: var(--font-color);
 }
 
 .hotels-item-location {
@@ -766,7 +779,16 @@ section.advantages {
   font-size: 20px;
   line-height: 2;
   font-weight: 500;
-  color: #FFFFFF;
+  color: var(--title-description-color);
+}
+
+.hotels-more-link::before {
+  content: "";
+  position: absolute;
+  width: 374px;
+  height: 440px;
+  right: -54px;
+  bottom: -27px;
 }
 
 .hotels-more-link::after {
@@ -776,10 +798,15 @@ section.advantages {
   top: 12px;
   width: 10px;
   height: 10px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--title-description-color);
   border-left: none;
   border-top: none;
   transform: rotate(-45deg); 
+  transition: right .4s ease-in-out;
+}
+
+.hotels-more-link:hover::after {
+  right: -10px;
 }
 
 /* Search */
@@ -794,7 +821,7 @@ section.advantages {
 
 .search-title {
   line-height: 1;
-  color: #000;
+  color: var(--font-color);
 }
 
 .search-form {
@@ -803,7 +830,7 @@ section.advantages {
   margin: 0 45px;
   padding: 32px 28px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--title-description-color);
 }
 
 .form-container {
@@ -817,7 +844,7 @@ section.advantages {
   font-size: 16px;
   line-height: 1;
   font-weight: normal;
-  color: #000;
+  color: var(--font-color);
 }
 
 .search-form-choose {
@@ -838,7 +865,7 @@ section.advantages {
   font-size: 12px;
   line-height: 1;
   font-weight: normal;
-  color: #000;
+  color: var(--font-color);
 }
 
 .form-date {
@@ -873,7 +900,7 @@ section.advantages {
   display: flex;
   padding: 45px;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--title-description-color);
 }
 
 .contacts-container-infoblock {
@@ -908,7 +935,7 @@ section.advantages {
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
-  color: #000;
+  color: var(--font-color);
 }
 
 .contacts-item-description {
@@ -917,7 +944,7 @@ section.advantages {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
-  color: #000;
+  color: var(--font-color);
 }
 
 .contacts-item-info {
@@ -929,7 +956,12 @@ section.advantages {
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
-  color: #CC9933;
+  color: var(--link-color);
+  transition: color .4s ease-in-out;
+}
+
+.contacts-item-link:hover {
+  color: var(--hover-color);
 }
 
 .contacts-item-subinfo {
@@ -954,12 +986,12 @@ section.advantages {
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content:center
+  justify-content: center;
   align-items: flex-start;
   padding: 45px;
   background-color: #333;
   border-radius: 15px;
-  color: #fff;
+  color: var(--title-description-color);
 }
 
 .footer-left-side {
@@ -988,7 +1020,7 @@ section.advantages {
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
-  color: #CC9933;
+  color: var(--link-color);
 }
 
 .footer-adress {
@@ -1005,7 +1037,15 @@ section.advantages {
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
-  color: #CC9933;
+  color: var(--link-color);
+}
+
+.users-agree, .footer-link {
+  transition: color .4s ease-in-out;
+} 
+
+.users-agree:hover, .footer-link:hover {
+  color: var(--hover-color) ;
 }
 
 .footer-social-icon {
@@ -1014,6 +1054,7 @@ section.advantages {
   height: 25px;
   background: no-repeat center center transparent;
   background-size: contain;
+
 }
 
 .footer-social-item:not(:last-child) {
@@ -1032,6 +1073,22 @@ section.advantages {
   background-image: url(../img/vk.png);
 }
 
+.owl, .ok, .vk {
+  transition: background-image .4s ease-in-out;
+}
+
+.owl:hover {
+  background-image: url(../img/owl_hover.png);
+}
+
+.ok:hover {
+  background-image: url(../img/ok_hover.png);
+}
+
+.vk:hover {
+  background-image: url(../img/vk_hover.png);
+}
+
 .footer-logo {
   position: absolute;
   right: 182px;
@@ -1042,3 +1099,4 @@ section.advantages {
   background: url(../img/FooterLogo.png) no-repeat center center transparent;
   background-size: 100% 100%;
 }
+
